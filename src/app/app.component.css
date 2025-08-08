@@ -1,0 +1,13 @@
+#load {
+    animation: bro 1s alternate infinite;
+}
+
+@keyframes bro {
+    from {
+        transform: scale(1) translate(0px, 0px);
+    }
+
+    to {
+        transform: scale(1.2) translate(50px, 10px);
+    }
+}

@@ -1,0 +1,16 @@
+<!-- <h1>{{book.name()}}</h1>
+@if (book.isloading()) {
+<h5>loading...</h5>
+}
+<b>{{book.price() |currency:"USD"}}</b><br>
+<i>discount: {{book.discount()|currency:"USD"}}</i><br>
+<button (click)="book.pilus()">plusser</button><br>
+<input type="text" #myinput name="" id="">
+<button (click)="book.namechange(myinput.value)">name chnage</button> -->
+
+<h1>salom</h1>
+<button (click)="getdata()">get data</button>
+<button (click)="deletep(5)">update data</button>
+@for (item of users; track $index) {
+<p>{{item.title}}</p>
+}

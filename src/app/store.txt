@@ -1,0 +1,21 @@
+signal store ni nima uchun ishlatamiz?
+state managementda barcha kodlarni bir joyda markazlashtirish
+va reaktiv qilish uchun signal store dan foydalanamiz.
+ozgarivchiga qiymat sifatida signalStore funksiyasini saqlaymiz.
+signalStore oz ichida quyidagi parameterlarni oladi.
+withState(), withMethods(), withComputed(), withHooks().
+withState() = boshlangich qiymatni belgilash uchun..
+withMethods() =  shu qiymatlar ustida bajariladigan amallar uchun,
+withComputed() = signal qiymatlariga asoslangan holda hisoblangan(computed signal) qiymatlarini yaratish uchun.
+withHooks() = store yaratilganda(onInit) yoki destroy(onDestroy) bolganda bajariladigan amallar uchun.
+
+signal store faylini alohida qilib yaratib olamiz.
+withState kabi funksiyalarini @ngrx/signals dan import qilib olamiz.
+
+@component decorator ichida providers:[storenomi] yoziladi.
+va shu store nomi import qilinadi. keyin, shu store nomi campanent clasida ozgaruvchiga inject orqali saqlanadi.
+endu shu ozgaruvchinomi.kalit nomlariga murojat qilish mumkin.
+
+signalStore funksiyasida withState dan oldin
+{providedIn: 'root'} yozilishi kerak.
+bu prayekt boyicha barcha kampanentlarga export qilinishini bildiradi
